@@ -5,6 +5,8 @@ on:
 jobs:
   update_submodules:
     name: "Update dataset submodules"
+    # Only one job at a time, to avoid confflicts.
+    concurrency: repo-update
     runs-on: "ubuntu-latest"
     permissions: write-all
     env:
@@ -23,5 +25,6 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           message: ${{ format('Automatic update of {0}', github.event.client_payload.repo) }}
+          default_author: github_actions
           add: datasets/*
           push: true
