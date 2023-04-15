@@ -1,0 +1,3 @@
+[submodule "datasets/example-triples"]
+	path = datasets/example-triples
+	url = ../dataset-example-triples
