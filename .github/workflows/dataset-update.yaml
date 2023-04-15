@@ -14,8 +14,8 @@ jobs:
 
       - name: "Update submodule"
         run: |
-          echo "Updating submodule datasets/${REPO_NAME#dataset-}"
-          git submodule update --init --remote datasets/"${REPO_NAME#dataset-}"
+          echo "Updating submodule datasets/${REPO_NAME#RiverBench/dataset-}"
+          git submodule update --init --remote datasets/"${REPO_NAME#RiverBench/dataset-}"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
