@@ -1,0 +1,12 @@
+@prefix :        <https://riverbench.github.io/profiles/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rb:      <https://riverbench.github.io/schema/dataset#> .
+
+:__ID__
+    a dcat:DatasetSeries, rb:Profile ;
+    dcterms:identifier "__ID__" ;
+    dcterms:title "TODO" ;
+    dcterms:description "TODO" ;
+    rb:hasRestriction [] ; # TODO
+.

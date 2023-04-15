@@ -1,0 +1,16 @@
+@prefix :        <https://riverbench.github.io/profiles/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rb:      <https://riverbench.github.io/schema/dataset#> .
+
+:stream-triples-rdfstar-nonstandard
+    a dcat:DatasetSeries, rb:Profile ;
+    dcterms:identifier "stream-triples-rdfstar-nonstandard" ;
+    dcterms:title "Streaming triples (RDF-star, non-standard)" ;
+    dcterms:description "Streaming triples (with RDF-star and non-standard extensions)" ;
+    rb:hasRestriction [
+        rb:hasStreamElementType rb:triples ;
+    ] , [
+        rb:hasDistributionType rb:tripleStreamDistribution ;
+    ]
+.
