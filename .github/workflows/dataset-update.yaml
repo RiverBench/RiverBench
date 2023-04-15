@@ -1,0 +1,25 @@
+on:
+  repository_dispatch:
+    types: [dataset-update]
+
+jobs:
+  update_submodules:
+    name: "Update dataset submodules"
+    runs-on: "ubuntu-latest"
+    env:
+      REPO_NAME: ${{ github.event.client_payload.repo_name }}
+    steps:
+      - name: "Checkout the repository"
+        uses: actions/checkout@v3
+
+      - name: "Update submodule"
+        run: |
+          cd dataset
+          git submodule update --init --remote "${REPO_NAME#dataset-}"
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Automatic update of dataset submodule'
+          add: dataset/*
+          push: true
