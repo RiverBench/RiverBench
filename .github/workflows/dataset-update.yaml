@@ -14,12 +14,13 @@ jobs:
 
       - name: "Update submodule"
         run: |
-          echo "Updating submodule datasets/${REPO_NAME#RiverBench/dataset-}"
-          git submodule update --init --remote datasets/"${REPO_NAME#RiverBench/dataset-}"
+          REPO_PATH="datasets/${REPO_NAME#RiverBench/dataset-}"
+          echo "Updating submodule ${REPO_PATH}"
+          git submodule update --init --remote ${REPO_PATH}"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
           message: 'Automatic update of dataset submodule'
-          add: dataset/*
+          add: datasets/*
           push: true
