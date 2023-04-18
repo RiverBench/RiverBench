@@ -36,4 +36,4 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.PAT_MAIN_REPO_HOOKS }}
-          event-type: compile-docs
+          event-type: pre-release
