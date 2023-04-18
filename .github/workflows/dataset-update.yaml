@@ -28,3 +28,9 @@ jobs:
           default_author: github_actions
           add: datasets/*
           push: true
+
+      - name: "Trigger metadata & doc update"
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.PAT_DOC_REPO_HOOKS }}
+          event-type: compile-docs
