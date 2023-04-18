@@ -1,0 +1,12 @@
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix rb:      <https://riverbench.github.io/schema/dataset#> .
+@prefix rbt: <https://riverbench.github.io/schema/theme#> .
+
+<https://riverbench.github.io/>
+    a dcat:Catalog, rb:RiverBench ;
+    dcterms:title "RiverBench" ;
+    dcterms:description "RiverBench – RDF streaming benchmark suite." ;
+    dcat:themeTaxonomy rbt:conceptScheme ;
+.

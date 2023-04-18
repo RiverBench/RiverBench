@@ -20,12 +20,13 @@ jobs:
           path: riverbench
           submodules: true
 
-      - name: "Package profile metadata"
+      - name: "Package metadata"
         run: |
-          mkdir profiles_out
+          mkdir meta_out
           mkdir release
-          ci-worker package-profiles dev riverbench profiles_out
-          tar -czf release/profiles.tar.gz -C profiles_out .
+          ci-worker package-main dev riverbench meta_out
+          tar -czf release/profiles.tar.gz -C meta_out/profiles .
+          cp meta_out/metadata.ttl release
 
       - name: Fetch the schema repository
         uses: actions/checkout@v3
@@ -36,8 +37,19 @@ jobs:
       - name: "Generate documentation"
         run: |
           mkdir docs_out
-          ci-worker main-doc-gen dev riverbench profiles_out schema docs_out
+          ci-worker main-doc-gen dev riverbench meta_out schema docs_out
           tar -czf release/profiles_docs.tar.gz -C docs_out/profiles .
+          rm -r docs_out/profiles
+          mkdir readme_out
+          mv docs_out/README.md readme_out
+          mv riverbench/doc/extra/* docs_out
+          tar -czf release/docs.tar.gz -C docs_out .
+
+      - name: Upload README.md artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: readme
+          path: readme_out/README.md
 
       - name: Delete previous dev release
         uses: dev-drprasad/delete-tag-and-release@v1.0
@@ -55,6 +67,28 @@ jobs:
           name: "Development pre-release"
           artifacts: 'release/*'
           generateReleaseNotes: true
+
+  update-readme:
+    needs: pre-release
+    name: "Update README.md"
+    runs-on: "ubuntu-latest"
+    permissions: write-all
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v3
+
+      - name: Restore README.md
+        uses: actions/download-artifact@v3
+        with:
+          name: readme
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Automatic update of README.md'
+          default_author: github_actions
+          add: 'README.md'
+          push: true
 
   trigger-doc-update-dev:
     needs: pre-release
