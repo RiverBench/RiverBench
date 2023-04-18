@@ -27,6 +27,18 @@ jobs:
           ci-worker package-profiles dev riverbench profiles_out
           tar -czf release/profiles.tar.gz -C profiles_out .
 
+      - name: Fetch the schema repository
+        uses: actions/checkout@v3
+        with:
+          repository: 'RiverBench/schema'
+          path: schema
+
+      - name: "Generate documentation"
+        run: |
+          mkdir docs_out
+          ci-worker main-doc-gen dev riverbench profiles_out schema docs_out
+          tar -czf release/profiles_docs.tar.gz -C docs_out/profiles .
+
       - name: Delete previous dev release
         uses: dev-drprasad/delete-tag-and-release@v1.0
         with:
