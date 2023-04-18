@@ -42,7 +42,7 @@ jobs:
           rm -r docs_out/profiles
           mkdir readme_out
           mv docs_out/README.md readme_out
-          mv riverbench/doc/extra/* docs_out
+          mv riverbench/doc/extra docs_out/documentation
           tar -czf release/docs.tar.gz -C docs_out .
 
       - name: Upload README.md artifact
@@ -62,6 +62,7 @@ jobs:
         with:
           prerelease: true
           draft: false
+          omitDraftDuringUpdate: false
           makeLatest: false
           tag: "dev"
           name: "Development pre-release"
