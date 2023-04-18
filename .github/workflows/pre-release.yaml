@@ -48,15 +48,10 @@ jobs:
           name: readme
           path: readme_out/README.md
 
-      - name: Delete previous dev release
-        uses: dev-drprasad/delete-tag-and-release@v1.0
-        with:
-          tag_name: dev
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Upload files for the release
         uses: ncipollo/release-action@v1.12.0
         with:
+          allowUpdates: true
           prerelease: true
           draft: false
           omitDraftDuringUpdate: false
@@ -64,6 +59,7 @@ jobs:
           tag: "dev"
           name: "Development pre-release"
           artifacts: 'release/*'
+          removeArtifacts: true
           generateReleaseNotes: true
 
   update-readme:
