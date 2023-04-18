@@ -8,8 +8,8 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  package-profiles:
-    name: "Package profiles"
+  pre-release:
+    name: "Make a pre-release"
     runs-on: "ubuntu-latest"
     container: ghcr.io/riverbench/ci-worker:main
     permissions: write-all
@@ -55,4 +55,16 @@ jobs:
           name: "Development pre-release"
           artifacts: 'release/*'
           generateReleaseNotes: true
-      
+
+  trigger-doc-update-dev:
+    needs: pre-release
+    name: "Trigger documentation update (dev)"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Trigger repository_dispatch"
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.PAT_DOC_REPO_HOOKS }}
+          repository: RiverBench/riverbench.github.io
+          event-type: main-doc-update
+          client-payload: '{ "tag": "dev" }'
