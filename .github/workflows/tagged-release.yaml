@@ -33,7 +33,7 @@ jobs:
       - name: "Generate documentation"
         run: |
           mkdir docs_out
-          ci-worker main-doc-gen dev riverbench meta_out schema docs_out
+          ci-worker main-doc-gen "${GITHUB_REF_NAME#v}" riverbench meta_out schema docs_out
           tar -czf release/profiles_docs.tar.gz -C docs_out/profiles .
           rm -r docs_out/profiles
           mv riverbench/doc/extra docs_out/documentation
