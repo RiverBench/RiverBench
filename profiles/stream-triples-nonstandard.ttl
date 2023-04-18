@@ -8,6 +8,7 @@
     dcterms:identifier "stream-triples-nonstandard" ;
     dcterms:title "Streaming triples (non-standard)" ;
     dcterms:description "Streaming triples (with non-standard extensions)" ;
+    rb:isSupersetOfProfile :stream-triples ;
     rb:hasRestriction [
         rb:hasStreamElementType rb:triples ;
     ] , [

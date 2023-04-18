@@ -8,6 +8,7 @@
     dcterms:identifier "stream-triples-rdfstar" ;
     dcterms:title "Streaming triples (RDF-star)" ;
     dcterms:description "Streaming triples (with RDF-star)" ;
+    rb:isSupersetOfProfile :stream-triples ;
     rb:hasRestriction [
         rb:hasStreamElementType rb:triples ;
     ] , [

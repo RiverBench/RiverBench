@@ -8,6 +8,7 @@
     dcterms:identifier "stream-triples-rdfstar-nonstandard" ;
     dcterms:title "Streaming triples (RDF-star, non-standard)" ;
     dcterms:description "Streaming triples (with RDF-star and non-standard extensions)" ;
+    rb:isSupersetOfProfile :stream-triples-rdfstar, :stream-triples-nonstandard ;
     rb:hasRestriction [
         rb:hasStreamElementType rb:triples ;
     ] , [
