@@ -35,5 +35,5 @@ jobs:
       - name: "Trigger metadata & doc update"
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.PAT_DOC_REPO_HOOKS }}
+          token: ${{ secrets.PAT_MAIN_REPO_HOOKS }}
           event-type: compile-docs
