@@ -1,0 +1,46 @@
+# TODO: trigger by dataset-update
+
+on:
+  push:
+    branches:
+      - main
+  # TODO: tagged releases
+  workflow_dispatch: {}
+
+jobs:
+  package-profiles:
+    name: "Package profiles"
+    runs-on: "ubuntu-latest"
+    container: ghcr.io/riverbench/ci-worker:main
+    permissions: write-all
+    steps:
+      - name: "Checkout repository (with submodules)"
+        uses: actions/checkout@v3
+        with:
+          path: riverbench
+          submodules: true
+
+      - name: "Package profile metadata"
+        run: |
+          mkdir profiles_out
+          mkdir release
+          ci-worker package-profiles dev riverbench profiles_out
+          tar -czf release/profiles.tar.gz -C profiles_out .
+
+      - name: Delete previous dev release
+        uses: dev-drprasad/delete-tag-and-release@v1.0
+        with:
+          tag_name: dev
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload files for the release
+        uses: ncipollo/release-action@v1.12.0
+        with:
+          prerelease: true
+          draft: false
+          makeLatest: false
+          tag: "dev"
+          name: "Development pre-release"
+          artifacts: 'release/*'
+          generateReleaseNotes: true
+      
