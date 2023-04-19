@@ -1,7 +1,7 @@
 @prefix :        <https://riverbench.github.io/profiles/> .
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix rb:      <https://riverbench.github.io/schema/dataset#> .
+@prefix rb:      <https://riverbench.github.io/schema/metadata#> .
 
 :__ID__
     a dcat:DatasetSeries, rb:Profile ;
