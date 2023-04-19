@@ -20,7 +20,7 @@ Main repository of the Open RDF Streaming Benchmark Suite.
 - **<abbr title="A collection of data that is listed in the catalog.">Has dataset</abbr>**: [example-triples (dev)](https://riverbench.github.io/datasets/example-triples/dev)
 - **<abbr title="Indicates benchmark profiles that belong to this benchmark suite.">Has benchmark profile</abbr>**: 
     - [stream-triples-rdfstar (dev)](https://riverbench.github.io/profiles/stream-triples-rdfstar/dev)
-    - [stream-triples-nonstandard (dev)](https://riverbench.github.io/profiles/stream-triples-nonstandard/dev)
     - [stream-triples (dev)](https://riverbench.github.io/profiles/stream-triples/dev)
     - [stream-triples-rdfstar-nonstandard (dev)](https://riverbench.github.io/profiles/stream-triples-rdfstar-nonstandard/dev)
+    - [stream-triples-nonstandard (dev)](https://riverbench.github.io/profiles/stream-triples-nonstandard/dev)
 
