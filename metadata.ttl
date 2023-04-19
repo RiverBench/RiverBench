@@ -1,7 +1,7 @@
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
-@prefix rb:      <https://riverbench.github.io/schema/dataset#> .
+@prefix rb:      <https://riverbench.github.io/schema/metadata#> .
 @prefix rbt: <https://riverbench.github.io/schema/theme#> .
 
 <https://riverbench.github.io/>
