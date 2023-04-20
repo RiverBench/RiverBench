@@ -25,6 +25,9 @@ jobs:
           mkdir release
           ci-worker package-main dev riverbench meta_out
           tar -czf release/profiles.tar.gz -C meta_out/profiles .
+          cd meta_out/profiles
+          for f in *; do cp -- "$f" "../../release/profile-$f"; done
+          cd ../../
           cp meta_out/metadata.* release
 
       - name: Fetch the schema repository
