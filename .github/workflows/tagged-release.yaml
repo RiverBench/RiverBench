@@ -22,7 +22,7 @@ jobs:
           mkdir release
           ci-worker package-main "${GITHUB_REF_NAME#v}" riverbench meta_out
           tar -czf release/profiles.tar.gz -C meta_out/profiles .
-          cp meta_out/metadata.ttl release
+          cp meta_out/metadata.* release
 
       - name: Fetch the schema repository
         uses: actions/checkout@v3
