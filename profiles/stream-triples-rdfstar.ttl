@@ -1,7 +1,7 @@
-@prefix :        <https://riverbench.github.io/profiles/> .
+@prefix :        <https://w3id.org/riverbench/profiles/> .
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix rb:      <https://riverbench.github.io/schema/metadata#> .
+@prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
 
 :stream-triples-rdfstar
     a dcat:DatasetSeries, rb:Profile ;
