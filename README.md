@@ -12,15 +12,15 @@ Main repository of the Open RDF Streaming Benchmark Suite.
 
 ## General information
 
-- **<abbr title="A homepage for some thing.">Homepage</abbr>**: [https://riverbench.github.io/](https://riverbench.github.io/)
-- **<abbr title="The knowledge organization system (KOS) used to classify catalog's datasets.">Theme taxonomy</abbr>**: <abbr title="Collection of topic concepts used to annotate RiverBench datasets.">RiverBench topic scheme</abbr> ([rbt:conceptScheme](https://riverbench.github.io/schema/theme#conceptScheme))
+- **<abbr title="A homepage for some thing.">Homepage</abbr>**: [https://w3id.org/riverbench/](https://w3id.org/riverbench/)
+- **<abbr title="The knowledge organization system (KOS) used to classify catalog's datasets.">Theme taxonomy</abbr>**: <abbr title="Collection of topic concepts used to annotate RiverBench datasets.">RiverBench topic scheme</abbr> ([rbt:conceptScheme](https://w3id.org/riverbench/schema/theme#conceptScheme))
 
 ## Content
 
-- **<abbr title="A collection of data that is listed in the catalog.">Has dataset</abbr>**: [example-triples (dev)](https://riverbench.github.io/datasets/example-triples/dev)
+- **<abbr title="A collection of data that is listed in the catalog.">Has dataset</abbr>**: [example-triples (dev)](https://w3id.org/riverbench/datasets/example-triples/dev)
 - **<abbr title="Indicates benchmark profiles that belong to this benchmark suite.">Has benchmark profile</abbr>**: 
-    - [stream-triples-rdfstar (dev)](https://riverbench.github.io/profiles/stream-triples-rdfstar/dev)
-    - [stream-triples (dev)](https://riverbench.github.io/profiles/stream-triples/dev)
-    - [stream-triples-rdfstar-nonstandard (dev)](https://riverbench.github.io/profiles/stream-triples-rdfstar-nonstandard/dev)
-    - [stream-triples-nonstandard (dev)](https://riverbench.github.io/profiles/stream-triples-nonstandard/dev)
+    - [stream-triples-rdfstar-nonstandard (dev)](https://w3id.org/riverbench/profiles/stream-triples-rdfstar-nonstandard/dev)
+    - [stream-triples (dev)](https://w3id.org/riverbench/profiles/stream-triples/dev)
+    - [stream-triples-nonstandard (dev)](https://w3id.org/riverbench/profiles/stream-triples-nonstandard/dev)
+    - [stream-triples-rdfstar (dev)](https://w3id.org/riverbench/profiles/stream-triples-rdfstar/dev)
 
