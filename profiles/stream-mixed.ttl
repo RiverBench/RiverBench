@@ -1,0 +1,20 @@
+@prefix :        <https://w3id.org/riverbench/profiles/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+
+:stream-mixed
+    a dcat:DatasetSeries, rb:Profile ;
+    dcterms:identifier "stream-mixed" ;
+    dcterms:title "Streaming triples or quads (standard)" ;
+    dcterms:description "Streaming triples or quads (RDF 1.1 standard only)" ;
+    rb:isSupersetOfProfile :stream-triples, :stream-quads ;
+    rb:hasRestriction [
+        rb:hasDistributionType 
+            rb:tripleStreamDistribution, 
+            rb:quadStreamDistribution,
+            rb:graphStreamDistribution ;
+    ] , [
+        rb:conformsToRdf11 true ;
+    ]
+.

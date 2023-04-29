@@ -1,0 +1,22 @@
+@prefix :        <https://w3id.org/riverbench/profiles/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+
+:stream-mixed-rdfstar-nonstandard
+    a dcat:DatasetSeries, rb:Profile ;
+    dcterms:identifier "stream-mixed-rdfstar-nonstandard" ;
+    dcterms:title "Streaming triples or quads (RDF-star, non-standard)" ;
+    dcterms:description "Streaming triples or quads (with RDF-star and non-standard extensions). This profile includes all streaming datasets in RiverBench." ;
+    rb:isSupersetOfProfile 
+        :stream-mixed-rdfstar, 
+        :stream-mixed-nonstandard,
+        :stream-triples-rdfstar-nonstandard,
+        :stream-quads-rdfstar-nonstandard ;
+    rb:hasRestriction [
+        rb:hasDistributionType 
+            rb:tripleStreamDistribution,
+            rb:quadStreamDistribution, 
+            rb:graphStreamDistribution ;
+    ]
+.

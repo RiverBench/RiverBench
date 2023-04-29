@@ -1,0 +1,18 @@
+@prefix :        <https://w3id.org/riverbench/profiles/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+
+:stream-graphs
+    a dcat:DatasetSeries, rb:Profile ;
+    dcterms:identifier "stream-graphs" ;
+    dcterms:title "Streaming graphs (standard)" ;
+    dcterms:description "Streaming graphs (RDF 1.1 standard only)" ;
+    rb:hasRestriction [
+        rb:hasStreamElementType rb:graphs ;
+    ] , [
+        rb:hasDistributionType rb:graphStreamDistribution ;
+    ] , [
+        rb:conformsToRdf11 true ;
+    ]
+.

@@ -1,0 +1,18 @@
+@prefix :        <https://w3id.org/riverbench/profiles/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+
+:flat-triples
+    a dcat:DatasetSeries, rb:Profile ;
+    dcterms:identifier "flat-triples" ;
+    dcterms:title "Flat sequence of triples (standard)" ;
+    dcterms:description "Flat sequence of triples (RDF 1.1 standard only)" ;
+    rb:hasRestriction [
+        rb:hasStreamElementType rb:triples ;
+    ] , [
+        rb:hasDistributionType rb:flatDistribution ;
+    ] , [
+        rb:conformsToRdf11 true ;
+    ]
+.

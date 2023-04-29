@@ -1,0 +1,19 @@
+@prefix :        <https://w3id.org/riverbench/profiles/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+
+:flat-triples-nonstandard
+    a dcat:DatasetSeries, rb:Profile ;
+    dcterms:identifier "flat-triples-nonstandard" ;
+    dcterms:title "Flat sequence of triples (non-standard)" ;
+    dcterms:description "Flat sequence of triples (with non-standard extensions)" ;
+    rb:isSupersetOfProfile :flat-triples ;
+    rb:hasRestriction [
+        rb:hasStreamElementType rb:triples ;
+    ] , [
+        rb:hasDistributionType rb:flatDistribution ;
+    ] , [
+        rb:usesRdfStar false ;
+    ]
+.

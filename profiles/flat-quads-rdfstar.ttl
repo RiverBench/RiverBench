@@ -1,0 +1,19 @@
+@prefix :        <https://w3id.org/riverbench/profiles/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+
+:flat-quads-rdfstar
+    a dcat:DatasetSeries, rb:Profile ;
+    dcterms:identifier "flat-quads-rdfstar" ;
+    dcterms:title "Flat sequence of quads (RDF-star)" ;
+    dcterms:description "Flat sequence of quads (with RDF-star)" ;
+    rb:isSupersetOfProfile :flat-quads ;
+    rb:hasRestriction [
+        rb:hasStreamElementType rb:quads, rb:graphs ;
+    ] , [
+        rb:hasDistributionType rb:flatDistribution ;
+    ] , [
+        rb:conformsToRdfStarDraft_20211217 true ;
+    ]
+.
