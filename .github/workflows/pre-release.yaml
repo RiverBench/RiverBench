@@ -41,17 +41,13 @@ jobs:
           mkdir docs_out
           ci-worker main-doc-gen dev riverbench meta_out schema docs_out
           tar -czf release/profiles_docs.tar.gz -C docs_out/profiles .
-          rm -r docs_out/profiles
-          mkdir readme_out
-          mv docs_out/README.md readme_out
-          mv riverbench/doc/extra docs_out/documentation
-          tar -czf release/docs.tar.gz -C docs_out .
+          mv docs_out/index.md release/index.md
 
       - name: Upload README.md artifact
         uses: actions/upload-artifact@v3
         with:
           name: readme
-          path: readme_out/README.md
+          path: docs_out/README.md
 
       - name: Upload files for the release
         uses: ncipollo/release-action@v1.12.0
