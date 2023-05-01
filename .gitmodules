@@ -7,3 +7,6 @@
 [submodule "datasets/lod-katrina"]
 	path = datasets/lod-katrina
 	url = ../dataset-lod-katrina
+[submodule "datasets/politiquices"]
+	path = datasets/politiquices
+	url = ../dataset-politiquices
