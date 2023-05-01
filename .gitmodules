@@ -10,3 +10,6 @@
 [submodule "datasets/politiquices"]
 	path = datasets/politiquices
 	url = ../dataset-politiquices
+[submodule "datasets/nanopubs"]
+	path = datasets/nanopubs
+	url = ../dataset-nanopubs
