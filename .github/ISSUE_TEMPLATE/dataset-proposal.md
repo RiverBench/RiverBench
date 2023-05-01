@@ -1,5 +1,5 @@
 ---
-name: New dataset proposal
+name: Dataset proposal
 about: Form for proposing new datasets to be included in RiverBench.
 title: 'New dataset proposal: [IDENTIFIER HERE]'
 labels: new dataset
@@ -7,7 +7,7 @@ assignees: Ostrzyciel
 
 ---
 
-# Proposal for a new dataset to be included in RiverBench
+# Proposal for a new dataset in RiverBench
 
 *Please fill in the spaces indicated with "..."*
 
