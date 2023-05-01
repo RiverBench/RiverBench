@@ -4,6 +4,6 @@
 [submodule "datasets/yago-annotated-facts"]
 	path = datasets/yago-annotated-facts
 	url = ../dataset-yago-annotated-facts
-[submodule "datasets/yago-lod-katrina"]
-	path = datasets/yago-lod-katrina
+[submodule "datasets/lod-katrina"]
+	path = datasets/lod-katrina
 	url = ../dataset-lod-katrina
