@@ -13,3 +13,6 @@
 [submodule "datasets/nanopubs"]
 	path = datasets/nanopubs
 	url = ../dataset-nanopubs
+[submodule "datasets/linked-spending"]
+	path = datasets/linked-spending
+	url = ../dataset-linked-spending
