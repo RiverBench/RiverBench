@@ -16,3 +16,6 @@
 [submodule "datasets/linked-spending"]
 	path = datasets/linked-spending
 	url = ../dataset-linked-spending
+[submodule "datasets/citypulse-traffic"]
+	path = datasets/citypulse-traffic
+	url = ../dataset-citypulse-traffic
