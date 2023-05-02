@@ -21,7 +21,6 @@ Main repository of the Open RDF Streaming Benchmark Suite.
 
 - **<abbr title="A collection of data that is listed in the catalog.">Has dataset</abbr>**: 
     - [citypulse-traffic (dev)](https://w3id.org/riverbench/datasets/citypulse-traffic/dev)
-    - [example-triples (dev)](https://w3id.org/riverbench/datasets/example-triples/dev)
     - [linked-spending (dev)](https://w3id.org/riverbench/datasets/linked-spending/dev)
     - [lod-katrina (dev)](https://w3id.org/riverbench/datasets/lod-katrina/dev)
     - [nanopubs (dev)](https://w3id.org/riverbench/datasets/nanopubs/dev)
