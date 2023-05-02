@@ -11,5 +11,3 @@ RiverBench is an open, community-driven RDF streaming benchmark suite. It includ
 **Do you want to contribute YOUR dataset to RiverBench?** See the **[contribution guide](documentation/contribute)**.
 
 ----
-
-Below is a snapshot of the latest development version of the suite:
