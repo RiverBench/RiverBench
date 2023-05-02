@@ -8,7 +8,7 @@ RiverBench is an open, community-driven RDF streaming benchmark suite. It includ
 - **[Citing RiverBench and its datasets](documentation/cite)**
 - **[Code on GitHub](https://github.com/RiverBench)**
 
-:rainbow: **Do you want to contribute YOUR dataset to RiverBench?** See the **[contribution guide](documentation/contribute)**.
+**Do you want to contribute YOUR dataset to RiverBench?** See the **[contribution guide](documentation/contribute)**.
 
 ----
 
