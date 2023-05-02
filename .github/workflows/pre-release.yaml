@@ -11,15 +11,13 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  pre-release:
-    name: "Make a pre-release"
+  wait:
+    name: "Wait for rate limit reset"
     runs-on: "ubuntu-latest"
-    container: ghcr.io/riverbench/ci-worker:main
-    permissions: write-all
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: "Wait for rate limit reset"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sleep $((RANDOM % 10))
           rate=$(gh api rate_limit | jq '.rate')
@@ -36,6 +34,12 @@ jobs:
               echo "Rate limit has reset to $remaining requests"
           fi
 
+  pre-release:
+    name: "Make a pre-release"
+    runs-on: "ubuntu-latest"
+    container: ghcr.io/riverbench/ci-worker:main
+    permissions: write-all
+    steps:
       - name: "Checkout repository (with submodules)"
         uses: actions/checkout@v3
         with:
