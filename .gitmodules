@@ -1,6 +1,3 @@
-[submodule "datasets/example-triples"]
-	path = datasets/example-triples
-	url = ../dataset-example-triples
 [submodule "datasets/yago-annotated-facts"]
 	path = datasets/yago-annotated-facts
 	url = ../dataset-yago-annotated-facts
