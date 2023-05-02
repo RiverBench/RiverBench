@@ -35,6 +35,6 @@ assignees: Ostrzyciel
 
 ## Metadata license statement
 
-I agree to the metadata of this dataset being published under the [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/) license: YES/NO
+I agree to the metadata of this dataset being published under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license: YES/NO
 
 This statement does not apply to the dataset itself, which is licensed as indicated above.
