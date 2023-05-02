@@ -4,7 +4,14 @@ on:
       - "v*"
 
 jobs:
+  wait:
+    uses: RiverBench/ci-workflows/.github/workflows/wait-for-rate-limit.yaml@main
+    secrets: inherit
+    with:
+      needed-calls: 150
+
   tagged-release:
+    needs: wait
     name: "Make a tagged release"
     runs-on: "ubuntu-latest"
     container: ghcr.io/riverbench/ci-worker:main
