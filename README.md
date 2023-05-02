@@ -18,10 +18,9 @@ RiverBench is an open, community-driven RDF streaming benchmark suite. It includ
 Below is a snapshot of the latest development version of the suite:
 
 
-- **<abbr title="Information about rights held in and over the resource.">Rights</abbr>**: The metadata and documentation of RiverBench are licensed under the [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/) license. The source code of RiverBench is licensed under the [Apache License, Version 2.0](https://spdx.org/licenses/Apache-2.0). The included datasets are licensed under their respective licenses.
-
 ## General information
 
+- **<abbr title="Information about rights held in and over the resource.">Rights</abbr>**: The metadata and documentation of RiverBench are licensed under the [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/) license. The source code of RiverBench is licensed under the [Apache License, Version 2.0](https://spdx.org/licenses/Apache-2.0). The included datasets are licensed under their respective licenses.
 - **<abbr title="A homepage for some thing.">Homepage</abbr>**: [https://w3id.org/riverbench/](https://w3id.org/riverbench/)
 - **<abbr title="The knowledge organization system (KOS) used to classify catalog's datasets.">Theme taxonomy</abbr>**: <abbr title="Collection of topic concepts used to annotate RiverBench datasets.">RiverBench topic scheme</abbr> ([rbt:conceptScheme](https://w3id.org/riverbench/schema/theme#conceptScheme))
 
