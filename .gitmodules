@@ -16,3 +16,6 @@
 [submodule "datasets/citypulse-traffic"]
 	path = datasets/citypulse-traffic
 	url = ../dataset-citypulse-traffic
+[submodule "datasets/citypulse-traffic-graphs"]
+	path = datasets/citypulse-traffic-graphs
+	url = ../dataset-citypulse-traffic-graphs
