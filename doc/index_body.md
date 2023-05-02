@@ -6,9 +6,10 @@ RiverBench is an open, community-driven RDF streaming benchmark suite. It includ
 - **[Suite releases](v)** – stable releases of the benchmark suite.
 - **[Schemas & ontologies](schema)** – schemas for dataset and profile metadata.
 - **[Citing RiverBench and its datasets](documentation/cite)**
+- **[Code on GitHub](https://github.com/RiverBench)**
 
-:memo: **Do you want to contribute YOUR dataset to RiverBench?** See the **[contribution guide](documentation/contribute)**.
+:rainbow: **Do you want to contribute YOUR dataset to RiverBench?** See the **[contribution guide](documentation/contribute)**.
 
 ----
 
-Below is a snapshot of the latest development version of the suite.
+Below is a snapshot of the latest development version of the suite:
