@@ -35,6 +35,7 @@ jobs:
           fi
 
   pre-release:
+    needs: wait
     name: "Make a pre-release"
     runs-on: "ubuntu-latest"
     container: ghcr.io/riverbench/ci-worker:main
