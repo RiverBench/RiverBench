@@ -19,3 +19,6 @@
 [submodule "datasets/citypulse-traffic-graphs"]
 	path = datasets/citypulse-traffic-graphs
 	url = ../dataset-citypulse-traffic-graphs
+[submodule "datasets/digital-agenda-indicators"]
+	path = datasets/digital-agenda-indicators
+	url = ../dataset-digital-agenda-indicators
