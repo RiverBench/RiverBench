@@ -22,3 +22,9 @@
 [submodule "datasets/digital-agenda-indicators"]
 	path = datasets/digital-agenda-indicators
 	url = ../dataset-digital-agenda-indicators
+[submodule "datasets/assist-iot-weather-graphs"]
+	path = datasets/assist-iot-weather-graphs
+	url = ../dataset-assist-iot-weather-graphs
+[submodule "datasets/assist-iot-weather"]
+	path = datasets/assist-iot-weather
+	url = ../dataset-assist-iot-weather
