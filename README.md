@@ -29,6 +29,7 @@ Below is a snapshot of the latest development version of the suite:
 - **<abbr title="A collection of data that is listed in the catalog.">Has dataset</abbr>**: 
     - [citypulse-traffic (dev)](https://w3id.org/riverbench/datasets/citypulse-traffic/dev)
     - [citypulse-traffic-graphs (dev)](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev)
+    - [digital-agenda-indicators (dev)](https://w3id.org/riverbench/datasets/digital-agenda-indicators/dev)
     - [linked-spending (dev)](https://w3id.org/riverbench/datasets/linked-spending/dev)
     - [lod-katrina (dev)](https://w3id.org/riverbench/datasets/lod-katrina/dev)
     - [nanopubs (dev)](https://w3id.org/riverbench/datasets/nanopubs/dev)
