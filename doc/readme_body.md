@@ -4,4 +4,21 @@ RiverBench is an open, community-driven RDF streaming benchmark suite. It includ
 
 :rainbow: **Do you want to contribute YOUR dataset to RiverBench?** See the **[contribution guide](https://w3id.org/riverbench/documentation/contribute)** on the website.
 
+## Citing RiverBench
+
+If you use RiverBench in your research, please cite it as: *Sowiński, P. (2023). RiverBench: an open RDF streaming benchmark suite. https://w3id.org/riverbench*
+
+Or use this BibTeX entry:
+
+```bibtex
+@misc{riverbench,
+  author = {Sowiński, Piotr},
+  title = {RiverBench: an open RDF streaming benchmark suite},
+  howpublished = {\url{https://w3id.org/riverbench}},
+  year = {2023}
+}
+```
+
+----
+
 Below is a snapshot of the latest development version of the suite:
