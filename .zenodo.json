@@ -1,0 +1,19 @@
+{
+    "description": "<p>Archive / backup of the main repository of&nbsp;<a href=\"https://w3id.org/riverbench\">RiverBench</a>&nbsp;&ndash; an open RDF streaming benchmark suite.</p>\n\n<p><strong>Please visit the&nbsp;<a href=\"https://w3id.org/riverbench\">website</a>&nbsp;to find the packaged datasets, profiles, and documentation.</strong></p>\n\n<p><strong>This artifact serves ONLY as an archive / backup.</strong></p>\n\n<p>The rest of the backup on Zenodo:</p>\n\n<ul>\n\t<li><a href=\"https://doi.org/10.5281/zenodo.7908151\">Dataset source files</a> (can be used to re-build packaged datasets, if needed)</li>\n\t<li><a href=\"http://zenodo.org/search?page=1&amp;size=20&amp;q=RiverBench\">Dataset repositories and code</a></li>\n</ul>\n\n<p>In case GitHub goes down for whatever reason, the full release packages, metadata, and documentation&nbsp;can be restored from these sources using the&nbsp;<a href=\"https://zenodo.org/record/7907807\">ci-worker</a>.</p>\n\n<p>The license of this artifact is CC BY 4.0, but other parts of RiverBench are licensed separately. Code is under the Apache 2.0 license. Datasets are under their respective licenses (not more restrictive than CC BY-SA).</p>\n\n<p>&nbsp;</p>", 
+    "license": "CC-BY-4.0", 
+    "upload_type": "dataset", 
+    "keywords": [
+        "RDF", 
+        "RDF streaming", 
+        "Benchmark", 
+        "Dataset"
+    ], 
+    "creators": [
+        {
+            "orcid": "0000-0002-2543-9461", 
+            "affiliation": "Warsaw University of Technology", 
+            "name": "Piotr Sowi\u0144ski"
+        }
+    ], 
+    "access_right": "open"
+}
