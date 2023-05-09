@@ -31,3 +31,6 @@
 [submodule "datasets/muziekweb"]
 	path = datasets/muziekweb
 	url = ../dataset-muziekweb
+[submodule "datasets/dbpedia-live"]
+	path = datasets/dbpedia-live
+	url = ../dataset-dbpedia-live
