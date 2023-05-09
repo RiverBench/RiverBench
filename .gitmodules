@@ -28,3 +28,6 @@
 [submodule "datasets/assist-iot-weather"]
 	path = datasets/assist-iot-weather
 	url = ../dataset-assist-iot-weather
+[submodule "datasets/muziekweb"]
+	path = datasets/muziekweb
+	url = ../dataset-muziekweb
