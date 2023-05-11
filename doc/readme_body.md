@@ -19,6 +19,8 @@ Or use this BibTeX entry:
 }
 ```
 
+See also: **[preprint of a paper about RiverBench](https://arxiv.org/abs/2305.06226)**.
+
 ----
 
 Below is a snapshot of the latest development version of the suite:
