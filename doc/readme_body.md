@@ -6,20 +6,22 @@ RiverBench is an open, community-driven RDF streaming benchmark suite. It includ
 
 ## Citing RiverBench
 
-If you use RiverBench in your research, please cite it as: *Sowiński, P. (2023). RiverBench: an open RDF streaming benchmark suite. https://w3id.org/riverbench*
+If you use RiverBench in your research, please cite [the most recent paper about the suite](https://arxiv.org/abs/2305.06226):
+
+Sowinski, P., Ganzha, M., & Paprzycki, M. (2023). RiverBench: an Open RDF Streaming Benchmark Suite. *arXiv preprint arXiv:2305.06226*.
 
 Or use this BibTeX entry:
 
 ```bibtex
-@misc{riverbench,
-  author = {Sowiński, Piotr},
-  title = {RiverBench: an open RDF streaming benchmark suite},
-  howpublished = {\url{https://w3id.org/riverbench}},
-  year = {2023}
+@article{sowinski2023riverbench,
+  title={RiverBench: an Open RDF Streaming Benchmark Suite},
+  author={Sowinski, Piotr and Ganzha, Maria and Paprzycki, Marcin},
+  journal={arXiv preprint arXiv:2305.06226},
+  year={2023},
+  url={https://doi.org/10.48550/arXiv.2305.06226},
+  doi={10.48550/arXiv.2305.06226}
 }
 ```
-
-See also: **[preprint of a paper about RiverBench](https://arxiv.org/abs/2305.06226)**.
 
 ----
 
