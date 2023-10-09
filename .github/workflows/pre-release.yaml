@@ -42,6 +42,7 @@ jobs:
           cd ../../
           mv temp_doc meta_out/profiles/doc
           cp meta_out/metadata.* release
+          cp meta_out/dump.* release
 
       - name: Fetch the schema repository
         uses: actions/checkout@v3
