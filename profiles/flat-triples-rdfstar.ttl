@@ -2,6 +2,7 @@
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+@prefix stax:    <https://w3id.org/stax/ontology> .
 
 :flat-triples-rdfstar
     a dcat:DatasetSeries, rb:Profile ;
@@ -10,7 +11,7 @@
     dcterms:description "Flat sequence of triples (with RDF-star)" ;
     rb:isSupersetOfProfile :flat-triples ;
     rb:hasRestriction [
-        rb:hasStreamElementType rb:triples ;
+        stax:hasStreamType stax:flatTripleStream ;
     ] , [
         rb:hasDistributionType rb:flatDistribution ;
     ] , [

@@ -2,6 +2,7 @@
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+@prefix stax:    <https://w3id.org/stax/ontology> .
 
 :flat-quads-nonstandard
     a dcat:DatasetSeries, rb:Profile ;
@@ -10,7 +11,7 @@
     dcterms:description "Flat sequence of quads (with non-standard extensions)" ;
     rb:isSupersetOfProfile :flat-quads ;
     rb:hasRestriction [
-        rb:hasStreamElementType rb:quads, rb:graphs ;
+        stax:hasStreamType stax:flatQuadStream ;
     ] , [
         rb:hasDistributionType rb:flatDistribution ;
     ] , [

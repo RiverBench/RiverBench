@@ -2,16 +2,18 @@
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+@prefix stax:    <https://w3id.org/stax/ontology> .
 
 :stream-graphs
     a dcat:DatasetSeries, rb:Profile ;
     dcterms:identifier "stream-graphs" ;
-    dcterms:title "Streaming graphs (standard)" ;
-    dcterms:description "Streaming graphs (RDF 1.1 standard only)" ;
+    dcterms:title "Streaming unnamed graphs (standard)" ;
+    dcterms:description "Streaming unnamed graphs (RDF 1.1 standard only)" ;
+    rb:isSupersetOfProfile :stream-subject-graphs ;
     rb:hasRestriction [
-        rb:hasStreamElementType rb:graphs ;
+        stax:hasStreamType stax:graphStream, stax:subjectGraphStream ;
     ] , [
-        rb:hasDistributionType rb:graphStreamDistribution ;
+        rb:hasDistributionType rb:streamDistribution ;
     ] , [
         rb:conformsToRdf11 true ;
     ]

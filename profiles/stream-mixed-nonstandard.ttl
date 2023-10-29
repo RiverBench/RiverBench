@@ -2,21 +2,19 @@
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+@prefix stax:    <https://w3id.org/stax/ontology> .
 
 :stream-mixed-nonstandard
     a dcat:DatasetSeries, rb:Profile ;
     dcterms:identifier "stream-mixed-nonstandard" ;
-    dcterms:title "Streaming triples or quads (non-standard)" ;
-    dcterms:description "Streaming triples or quads (with non-standard extensions)" ;
+    dcterms:title "Streaming graphs or datasets (non-standard)" ;
+    dcterms:description "Streaming graphs or datasets (with non-standard extensions)" ;
     rb:isSupersetOfProfile 
         :stream-mixed, 
-        :stream-triples-nonstandard,
-        :stream-quads-nonstandard ;
+        :stream-graphs-nonstandard,
+        :stream-datasets-nonstandard ;
     rb:hasRestriction [
-        rb:hasDistributionType 
-            rb:tripleStreamDistribution, 
-            rb:quadStreamDistribution, 
-            rb:graphStreamDistribution ;
+        rb:hasDistributionType rb:streamDistribution ;
     ] , [
         rb:usesRdfStar false ;
     ]

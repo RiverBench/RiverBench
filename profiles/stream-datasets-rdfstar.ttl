@@ -4,14 +4,14 @@
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
 @prefix stax:    <https://w3id.org/stax/ontology> .
 
-:stream-graphs-rdfstar
+:stream-datasets-rdfstar
     a dcat:DatasetSeries, rb:Profile ;
-    dcterms:identifier "stream-graphs-rdfstar" ;
-    dcterms:title "Streaming unnamed graphs (RDF-star)" ;
-    dcterms:description "Streaming unnamed graphs (with RDF-star)" ;
-    rb:isSupersetOfProfile :stream-graphs, :stream-subject-graphs-rdfstar ;
+    dcterms:identifier "stream-datasets-rdfstar" ;
+    dcterms:title "Streaming datasets (RDF-star)" ;
+    dcterms:description "Streaming datasets (with RDF-star)" ;
+    rb:isSupersetOfProfile :stream-datasets, :stream-named-graphs-rdfstar ;
     rb:hasRestriction [
-        stax:hasStreamType stax:graphStream, stax:subjectGraphStream ;
+        stax:hasStreamType stax:datasetStream, stax:namedGraphStream, stax:timestampedNamedGraphStream ;
     ] , [
         rb:hasDistributionType rb:streamDistribution ;
     ] , [

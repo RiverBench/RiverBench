@@ -4,16 +4,16 @@
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
 @prefix stax:    <https://w3id.org/stax/ontology> .
 
-:flat-quads-rdfstar
+:stream-ts-named-graphs-rdfstar
     a dcat:DatasetSeries, rb:Profile ;
-    dcterms:identifier "flat-quads-rdfstar" ;
-    dcterms:title "Flat sequence of quads (RDF-star)" ;
-    dcterms:description "Flat sequence of quads (with RDF-star)" ;
-    rb:isSupersetOfProfile :flat-quads ;
+    dcterms:identifier "stream-ts-named-graphs-rdfstar" ;
+    dcterms:title "Streaming timestamped named graphs (RDF-star)" ;
+    dcterms:description "Streaming timestamped named graphs (with RDF-star)" ;
+    rb:isSupersetOfProfile :stream-ts-named-graphs ;
     rb:hasRestriction [
-        stax:hasStreamType stax:flatQuadStream ;
+        stax:hasStreamType stax:timestampedNamedGraphStream ;
     ] , [
-        rb:hasDistributionType rb:flatDistribution ;
+        rb:hasDistributionType rb:graphStreamDistribution ;
     ] , [
         rb:conformsToRdfStarDraft_20211217 true ;
     ]

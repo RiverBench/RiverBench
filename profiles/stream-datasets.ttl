@@ -4,15 +4,16 @@
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
 @prefix stax:    <https://w3id.org/stax/ontology> .
 
-:flat-quads
+:stream-datasets
     a dcat:DatasetSeries, rb:Profile ;
-    dcterms:identifier "flat-quads" ;
-    dcterms:title "Flat sequence of quads (standard)" ;
-    dcterms:description "Flat sequence of quads (RDF 1.1 standard only)" ;
+    dcterms:identifier "stream-datasets" ;
+    dcterms:title "Streaming datasets (standard)" ;
+    dcterms:description "Streaming datasets (RDF 1.1 standard only)" ;
+    rb:isSupersetOfProfile :stream-named-graphs ;
     rb:hasRestriction [
-        stax:hasStreamType stax:flatQuadStream ;
+        stax:hasStreamType stax:datasetStream, stax:namedGraphStream, stax:timestampedNamedGraphStream ;
     ] , [
-        rb:hasDistributionType rb:flatDistribution ;
+        rb:hasDistributionType rb:streamDistribution ;
     ] , [
         rb:conformsToRdf11 true ;
     ]

@@ -1,0 +1,20 @@
+@prefix :        <https://w3id.org/riverbench/profiles/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+@prefix stax:    <https://w3id.org/stax/ontology> .
+
+:stream-named-graphs-rdfstar
+    a dcat:DatasetSeries, rb:Profile ;
+    dcterms:identifier "stream-named-graphs-rdfstar" ;
+    dcterms:title "Streaming named graphs (RDF-star)" ;
+    dcterms:description "Streaming named graphs (with RDF-star)" ;
+    rb:isSupersetOfProfile :stream-named-graphs, :stream-ts-named-graphs-rdfstar ;
+    rb:hasRestriction [
+        stax:hasStreamType stax:namedGraphStream, stax:timestampedNamedGraphStream ;
+    ] , [
+        rb:hasDistributionType rb:graphStreamDistribution ;
+    ] , [
+        rb:conformsToRdfStarDraft_20211217 true ;
+    ]
+.

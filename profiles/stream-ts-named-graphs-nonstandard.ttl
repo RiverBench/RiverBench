@@ -1,0 +1,20 @@
+@prefix :        <https://w3id.org/riverbench/profiles/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+@prefix stax:    <https://w3id.org/stax/ontology> .
+
+:stream-ts-named-graphs-nonstandard
+    a dcat:DatasetSeries, rb:Profile ;
+    dcterms:identifier "stream-ts-named-graphs-nonstandard" ;
+    dcterms:title "Streaming timestamped named graphs (non-standard)" ;
+    dcterms:description "Streaming timestamped named graphs (with non-standard extensions)" ;
+    rb:isSupersetOfProfile :stream-ts-named-graphs ;
+    rb:hasRestriction [
+        stax:hasStreamType stax:timestampedNamedGraphStream ;
+    ] , [
+        rb:hasDistributionType rb:graphStreamDistribution ;
+    ] , [
+        rb:usesRdfStar false ;
+    ]
+.

@@ -4,14 +4,14 @@
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
 @prefix stax:    <https://w3id.org/stax/ontology> .
 
-:stream-graphs-nonstandard
+:stream-datasets-nonstandard
     a dcat:DatasetSeries, rb:Profile ;
-    dcterms:identifier "stream-graphs-nonstandard" ;
-    dcterms:title "Streaming unnamed graphs (non-standard)" ;
-    dcterms:description "Streaming unnamed graphs (with non-standard extensions)" ;
-    rb:isSupersetOfProfile :stream-graphs, :stream-subject-graphs-nonstandard ;
+    dcterms:identifier "stream-datasets-nonstandard" ;
+    dcterms:title "Streaming datasets (non-standard)" ;
+    dcterms:description "Streaming datasets (with non-standard extensions)" ;
+    rb:isSupersetOfProfile :stream-datasets, :stream-named-graphs-nonstandard ;
     rb:hasRestriction [
-        stax:hasStreamType stax:graphStream, stax:subjectGraphStream ;
+        stax:hasStreamType stax:datasetStream, stax:namedGraphStream, stax:timestampedNamedGraphStream ;
     ] , [
         rb:hasDistributionType rb:streamDistribution ;
     ] , [

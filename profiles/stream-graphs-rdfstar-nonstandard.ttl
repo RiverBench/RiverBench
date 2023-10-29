@@ -2,16 +2,20 @@
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
+@prefix stax:    <https://w3id.org/stax/ontology> .
 
 :stream-graphs-rdfstar-nonstandard
     a dcat:DatasetSeries, rb:Profile ;
     dcterms:identifier "stream-graphs-rdfstar-nonstandard" ;
-    dcterms:title "Streaming graphs (RDF-star, non-standard)" ;
-    dcterms:description "Streaming graphs (with RDF-star and non-standard extensions)" ;
-    rb:isSupersetOfProfile :stream-graphs-rdfstar, :stream-graphs-nonstandard ;
+    dcterms:title "Streaming unnamed graphs (RDF-star, non-standard)" ;
+    dcterms:description "Streaming unnamed graphs (with RDF-star and non-standard extensions)" ;
+    rb:isSupersetOfProfile
+        :stream-graphs-rdfstar, 
+        :stream-graphs-nonstandard, 
+        :stream-subject-graphs-rdfstar-nonstandard ;
     rb:hasRestriction [
-        rb:hasStreamElementType rb:graphs ;
+        stax:hasStreamType stax:graphStream, stax:subjectGraphStream ;
     ] , [
-        rb:hasDistributionType rb:graphStreamDistribution ;
+        rb:hasDistributionType rb:streamDistribution ;
     ]
 .
