@@ -7,8 +7,8 @@
 :stream-subject-graphs-rdfstar-nonstandard
     a dcat:DatasetSeries, rb:Profile ;
     dcterms:identifier "stream-subject-graphs-rdfstar-nonstandard" ;
-    dcterms:title "Streaming unnamed single-subject graphs (RDF-star, non-standard)" ;
-    dcterms:description "Streaming unnamed single-subject graphs (with RDF-star and non-standard extensions)" ;
+    dcterms:title "Streaming unnamed subject graphs (RDF-star, non-standard)" ;
+    dcterms:description "Streaming unnamed subject graphs (with RDF-star and non-standard extensions)" ;
     rb:isSupersetOfProfile :stream-subject-graphs-rdfstar, :stream-subject-graphs-nonstandard ;
     rb:hasRestriction [
         stax:hasStreamType stax:subjectGraphStream ;

@@ -7,8 +7,8 @@
 :stream-subject-graphs-nonstandard
     a dcat:DatasetSeries, rb:Profile ;
     dcterms:identifier "stream-subject-graphs-nonstandard" ;
-    dcterms:title "Streaming unnamed single-subject graphs (non-standard)" ;
-    dcterms:description "Streaming unnamed single-subject graphs (with non-standard extensions)" ;
+    dcterms:title "Streaming unnamed subject graphs (non-standard)" ;
+    dcterms:description "Streaming unnamed subject graphs (with non-standard extensions)" ;
     rb:isSupersetOfProfile :stream-subject-graphs ;
     rb:hasRestriction [
         stax:hasStreamType stax:subjectGraphStream ;
