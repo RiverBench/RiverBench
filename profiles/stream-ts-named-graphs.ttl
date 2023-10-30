@@ -2,7 +2,7 @@
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
-@prefix stax:    <https://w3id.org/stax/ontology> .
+@prefix stax:    <https://w3id.org/stax/ontology#> .
 
 :stream-ts-named-graphs
     a dcat:DatasetSeries, rb:Profile ;
@@ -12,7 +12,7 @@
     rb:hasRestriction [
         stax:hasStreamType stax:timestampedNamedGraphStream ;
     ] , [
-        rb:hasDistributionType rb:graphStreamDistribution ;
+        rb:hasDistributionType rb:streamDistribution, rb:jellyDistribution ;
     ] , [
         rb:conformsToRdf11 true ;
     ]

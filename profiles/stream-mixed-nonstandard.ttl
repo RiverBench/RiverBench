@@ -2,7 +2,7 @@
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
-@prefix stax:    <https://w3id.org/stax/ontology> .
+@prefix stax:    <https://w3id.org/stax/ontology#> .
 
 :stream-mixed-nonstandard
     a dcat:DatasetSeries, rb:Profile ;
@@ -14,7 +14,7 @@
         :stream-graphs-nonstandard,
         :stream-datasets-nonstandard ;
     rb:hasRestriction [
-        rb:hasDistributionType rb:streamDistribution ;
+        rb:hasDistributionType rb:streamDistribution, rb:jellyDistribution ;
     ] , [
         rb:usesRdfStar false ;
     ]
