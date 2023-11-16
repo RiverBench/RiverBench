@@ -9,7 +9,7 @@ assignees: Ostrzyciel
 
 # Proposal for a new dataset in RiverBench
 
-*Please fill in the spaces indicated with "..."*
+*Please fill in the spaces indicated with "...". If you are unsure about something, feel free to leave the field empty – the maintainer will help you.*
 
 **See the [guide on creating new datasets](https://w3id.org/riverbench/documentation/creating-new-dataset) for instructions on how to fill this out.**
 
@@ -25,7 +25,7 @@ assignees: Ostrzyciel
 
 ## Technical information
 
-- **Stream element type:** triples/quads/graphs
+- **Stream type (according to [RDF-STaX](https://w3id.org/stax/dev/taxonomy)):** ...
 - **Stream element count:** ...
 - **How were the stream elements split:** ...
 - **Uses RDF-star:** yes/no
