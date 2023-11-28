@@ -2,12 +2,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix rb:      <https://w3id.org/riverbench/schema/metadata#> .
-@prefix rbt: <https://w3id.org/riverbench/schema/theme#> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
 
 <https://w3id.org/riverbench/>
     a dcat:Catalog, rb:RiverBench ;
     dcterms:title "RiverBench"@en ;
     dcterms:description "RiverBench – open, community-driven RDF streaming benchmark suite."@en ;
     dcterms:rights "The metadata, documentation, and ontologies of RiverBench are licensed under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. The source code of RiverBench is licensed under the [Apache License, Version 2.0](https://spdx.org/licenses/Apache-2.0). The included datasets are licensed under their respective licenses."@en ;
-    dcat:themeTaxonomy rbt:conceptScheme ;
+    dcat:themeTaxonomy eurovoc:100141 ;
 .
