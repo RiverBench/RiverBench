@@ -42,7 +42,7 @@ Below is a snapshot of the latest development version of the suite:
 ## General information
 
 - **<abbr title="Information about rights held in and over the resource.">Rights</abbr>**: The metadata, documentation, and ontologies of RiverBench are licensed under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. The source code of RiverBench is licensed under the [Apache License, Version 2.0](https://spdx.org/licenses/Apache-2.0). The included datasets are licensed under their respective licenses. _(<abbr title="English">en</abbr>)_
-- **<abbr title="A homepage for some thing.">Homepage</abbr>**: [https://w3id.org/riverbench/](https://w3id.org/riverbench/)
+- **<abbr title="A homepage for some thing.">Homepage</abbr>**: [RiverBench (dev)](https://w3id.org/riverbench/)
 - **<abbr title="The knowledge organization system (KOS) used to classify catalog's datasets.">Theme taxonomy</abbr>**: EuroVoc ([eurovoc:100141](http://eurovoc.europa.eu/100141))
 
 ## Content
@@ -60,7 +60,7 @@ Below is a snapshot of the latest development version of the suite:
     - [nanopubs (dev)](https://w3id.org/riverbench/datasets/nanopubs/dev)
     - [politiquices (dev)](https://w3id.org/riverbench/datasets/politiquices/dev)
     - [yago-annotated-facts (dev)](https://w3id.org/riverbench/datasets/yago-annotated-facts/dev)
-- **<abbr title="Indicates benchmark profiles that belong to this benchmark suite.">Has benchmark profile</abbr>**: 
+- **<abbr title="For benchmark categories this property indicates profiles that belong to the category.">Has benchmark profile</abbr>**: 
     - [flat-mixed (dev)](https://w3id.org/riverbench/profiles/flat-mixed/dev)
     - [flat-mixed-nonstandard (dev)](https://w3id.org/riverbench/profiles/flat-mixed-nonstandard/dev)
     - [flat-mixed-rdfstar (dev)](https://w3id.org/riverbench/profiles/flat-mixed-rdfstar/dev)
