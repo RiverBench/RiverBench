@@ -25,8 +25,6 @@ assignees: Ostrzyciel
 - **[Existing benchmark category](https://w3id.org/riverbench/category), if applicable:** ...
 - **Proponent(s):** ...
 
-## Metadata license statement
+## License statement
 
-I agree to the metadata of this dataset being published under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license: YES/NO
-
-This statement does not apply to the dataset itself, which is licensed as indicated above.
+I agree to the description and metadata of this task being published under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license: YES/NO
