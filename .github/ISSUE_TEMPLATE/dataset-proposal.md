@@ -1,6 +1,6 @@
 ---
-name: Dataset proposal
-about: Form for proposing new datasets to be included in RiverBench.
+name: Benchmark dataset proposal
+about: Form for proposing new benchmark datasets to be included in RiverBench.
 title: 'Dataset proposal: [IDENTIFIER HERE]'
 labels: new dataset
 assignees: Ostrzyciel

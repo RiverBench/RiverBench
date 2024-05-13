@@ -1,5 +1,5 @@
 ---
-name: Task proposal
+name: Benchmark task proposal
 about: Form for proposing new benchmark tasks to be included in RiverBench.
 title: 'Task proposal: [IDENTIFIER HERE]'
 labels: new task
