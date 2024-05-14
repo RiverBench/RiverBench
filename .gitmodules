@@ -34,3 +34,9 @@
 [submodule "datasets/dbpedia-live"]
 	path = datasets/dbpedia-live
 	url = ../dataset-dbpedia-live
+[submodule "categories/flat"]
+	path = categories/flat
+	url = ../category-flat
+[submodule "categories/stream"]
+	path = categories/stream
+	url = ../category-stream
