@@ -25,7 +25,7 @@ jobs:
     permissions: write-all
     steps:
       - name: "Checkout repository (with submodules)"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: riverbench
           submodules: true
@@ -35,17 +35,11 @@ jobs:
           mkdir meta_out
           mkdir release
           ci-worker package-main dev riverbench meta_out
-          mv meta_out/profiles/doc temp_doc
-          tar -czf release/profiles.tar.gz -C meta_out/profiles .
-          cd meta_out/profiles
-          for f in *; do cp -- "$f" "../../release/profile-$f"; done
-          cd ../../
-          mv temp_doc meta_out/profiles/doc
           cp meta_out/metadata.* release
           cp meta_out/dump.* release
 
       - name: Fetch the schema repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: 'RiverBench/schema'
           path: schema
@@ -54,18 +48,17 @@ jobs:
         run: |
           mkdir docs_out
           ci-worker main-doc-gen dev riverbench meta_out schema docs_out
-          tar -czf release/profiles_docs.tar.gz -C docs_out/profiles .
           mv meta_out/doc/dataset_table.md release/dataset_table.md
           mv docs_out/index.md release/index.md
 
       - name: Upload README.md artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: readme
           path: docs_out/README.md
 
       - name: Upload files for the release
-        uses: ncipollo/release-action@v1.12.0
+        uses: ncipollo/release-action@v1.14.0
         with:
           allowUpdates: true
           prerelease: true
@@ -84,10 +77,10 @@ jobs:
     permissions: write-all
     steps:
       - name: "Checkout repository"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Restore README.md
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: readme
 
@@ -105,7 +98,7 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - name: "Trigger repository_dispatch"
-        uses: peter-evans/repository-dispatch@v2
+        uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT_DOC_REPO_HOOKS }}
           repository: RiverBench/riverbench.github.io
