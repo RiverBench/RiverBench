@@ -8,7 +8,7 @@ jobs:
     uses: RiverBench/ci-workflows/.github/workflows/wait-for-rate-limit.yaml@main
     secrets: inherit
     with:
-      needed-calls: 150
+      needed-calls: 50
 
   tagged-release:
     needs: wait
@@ -61,7 +61,7 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - name: "Trigger repository_dispatch"
-        uses: peter-evans/repository-dispatch@v2
+        uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.PAT_DOC_REPO_HOOKS }}
           repository: RiverBench/riverbench.github.io

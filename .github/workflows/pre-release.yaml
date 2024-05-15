@@ -15,7 +15,7 @@ jobs:
     uses: RiverBench/ci-workflows/.github/workflows/wait-for-rate-limit.yaml@main
     secrets: inherit
     with:
-      needed-calls: 150
+      needed-calls: 50
 
   pre-release:
     needs: wait
