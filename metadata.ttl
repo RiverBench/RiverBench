@@ -8,6 +8,6 @@
     a dcat:Catalog, rb:RiverBench ;
     dcterms:title "RiverBench"@en ;
     dcterms:description "RiverBench – open, community-driven RDF streaming benchmark suite."@en ;
-    dcterms:rights "The metadata, documentation, and ontologies of RiverBench are licensed under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. The source code of RiverBench is licensed under the [Apache License, Version 2.0](https://spdx.org/licenses/Apache-2.0). The included datasets are licensed under their respective licenses."@en ;
+    dcterms:rights "The metadata, documentation, and ontologies of RiverBench are licensed under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. The source code of RiverBench is licensed under the [Apache License, Version 2.0](https://spdx.org/licenses/Apache-2.0). The included datasets are licensed under their respective free licenses, listed in their documentation pages."@en ;
     dcat:themeTaxonomy eurovoc:100141 ;
 .
