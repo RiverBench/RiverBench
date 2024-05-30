@@ -5,9 +5,6 @@ on:
 jobs:
   update_submodules:
     name: "Update category submodules"
-    # Only one job at a time, to avoid confflicts.
-    # Shared concurrency with dataset-update jobs.
-    concurrency: repo-update
     runs-on: "ubuntu-latest"
     permissions: write-all
     env:
