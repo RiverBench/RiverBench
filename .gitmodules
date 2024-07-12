@@ -40,3 +40,6 @@
 [submodule "categories/stream"]
 	path = categories/stream
 	url = ../category-stream
+[submodule "datasets/openaire-lod"]
+	path = datasets/openaire-lod
+	url = ../dataset-openaire-lod
