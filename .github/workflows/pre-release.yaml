@@ -36,7 +36,7 @@ jobs:
           mkdir release
           ci-worker package-main dev riverbench meta_out
           cp meta_out/metadata.* release
-          cp meta_out/dump.* release
+          cp meta_out/dump* release
 
       - name: Fetch the schema repository
         uses: actions/checkout@v4
