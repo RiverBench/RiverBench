@@ -48,7 +48,7 @@ jobs:
         run: |
           mkdir docs_out
           ci-worker main-doc-gen dev riverbench meta_out schema docs_out
-          mv meta_out/doc/dataset_table.md release/dataset_table.md
+          mv meta_out/doc/*.md release/
           mv docs_out/index.md release/index.md
 
       - name: Upload README.md artifact
