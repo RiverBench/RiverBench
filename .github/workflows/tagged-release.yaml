@@ -45,7 +45,7 @@ jobs:
           mv docs_out/index.md release/index.md
 
       - name: Upload files for the release
-        uses: ncipollo/release-action@v1.14.0
+        uses: ncipollo/release-action@v1
         with:
           prerelease: false
           draft: false
