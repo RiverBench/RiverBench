@@ -9,11 +9,11 @@
 
 # RiverBench
 
-RiverBench is an open, community-driven RDF streaming benchmark suite. It includes a varied collection of datasets representing many RDF streaming use cases. The datasets can be used for benchmarking and testing of streaming **and** non-streaming RDF engines, compression algorithms, triple stores, and other tools.
+RiverBench is an open, community-driven RDF streaming benchmark suite. It includes a varied collection of datasets and tasks, representing many real-life use cases. It can be used for benchmarking and testing of streaming **and** non-streaming RDF engines, compression algorithms, triple stores, and other tools.
 
-:sparkles: **All information about datasets, using them, contributing, and more can be found on the [website](https://w3id.org/riverbench).**
+:sparkles: **All information about using RiverBench and contributing to it can be found on the [website](https://w3id.org/riverbench).**
 
-:rainbow: **Do you want to contribute YOUR dataset to RiverBench?** See the **[contribution guide](https://w3id.org/riverbench/documentation/contribute)** on the website.
+:question: **How to use RiverBench in your study?** See the **[quick start guide](https://w3id.org/riverbench/v/dev/documentation/using)** on the website.
 
 ## Citing RiverBench
 
@@ -33,6 +33,8 @@ Or use this BibTeX entry:
   doi={10.48550/arXiv.2305.06226}
 }
 ```
+
+Read more about [licensing and citation](https://w3id.org/riverbench/v/dev/documentation/licensing).
 
 ----
 
