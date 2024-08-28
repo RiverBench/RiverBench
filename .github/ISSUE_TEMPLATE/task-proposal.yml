@@ -1,0 +1,78 @@
+name: Benchmark task proposal
+description: Form for proposing new benchmark tasks to be included in RiverBench.
+title: "Task proposal: [IDENTIFIER HERE]"
+labels: ["new task"]
+assignees:
+  - Ostrzyciel
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A benchmark task is a description of a concrete benchmarking procedure, for example: measuring deserialization throughput. If you are unsure about something, feel free to leave the field empty – the maintainer will help you.
+
+        **See the [guide on creating new tasks](https://w3id.org/riverbench/v/dev/documentation/creating-new-task) for instructions on how to fill this out.**
+
+        ## General information
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description of the task
+      description: Provide a brief and informative description of the task (what is being measured, how, and why). You can later expand on this description when the task is created.
+    validations:
+      required: true
+
+  - type: textarea
+    id: task-value
+    attributes:
+      label: Task usefulness (why is the task important)
+      description: Explain the significance of the task. For example, the task may measure a performance aspect that is not covered by other tasks, or it may be useful for comparing different systems.
+
+  - type: textarea
+    id: past-benchmarks
+    attributes:
+      label: Past benchmarking efforts and task descriptions (if any)
+      description: Provide links to any past benchmarking efforts or task descriptions that are related to the proposed task (for example, a paper describing the task).
+
+  - type: input
+    id: identifier
+    attributes:
+      label: Proposed identifier
+      description: Suggest a unique identifier for the task using only lowercase latin letters, digits, and dashes (-).
+      placeholder: e.g., my-task
+
+  - type: checkboxes
+    id: new-category
+    attributes:
+      label: Does the task need a new benchmark category?
+      description: Check the box if there is no suitable [benchmark category](https://w3id.org/riverbench/v/dev/categories) for the new task.
+      options:
+        - label: New category needed
+
+  - type: input
+    id: category
+    attributes:
+      label: Existing benchmark category (if applicable)
+      description: If the task requires a new category, leave this field blank. Otherwise, provide the identifier of the [existing category](https://w3id.org/riverbench/v/dev/categories) that the task should be added to.
+
+  - type: textarea
+    id: proponents
+    attributes:
+      label: Proponent(s)
+      description: List the names of the task's proponents.
+
+## ---------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Metadata license statement
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Metadata license
+      description: By submitting this proposal, you agree to publish the metadata of this task under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license.
+      options:
+        - label: I agree to the terms
+          required: true
