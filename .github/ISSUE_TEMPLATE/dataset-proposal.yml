@@ -1,4 +1,4 @@
-name: Benchmark dataset proposal (new)
+name: Benchmark dataset proposal
 description: Form for proposing new benchmark datasets to be included in RiverBench.
 title: "Dataset proposal: [IDENTIFIER HERE]"
 labels: ["new dataset"]
@@ -33,9 +33,7 @@ body:
     attributes:
       label: Proposed identifier
       description: Suggest a unique identifier for the dataset using only lowercase latin letters, digits, and dashes (-).
-      placeholder: my-dataset
-    validations:
-      required: true
+      placeholder: e.g., my-dataset
 
   - type: input
     id: source
@@ -49,8 +47,6 @@ body:
       label: License of the dataset
       description: Specify the dataset's license by providing an SPDX license link from [this list](https://spdx.org/licenses/). Ensure that the chosen license allows for free use and does not prohibit commercial usage or modification. Examples of accepted licenses include [CC Zero](https://spdx.org/licenses/CC0-1.0.html), [CC BY](https://spdx.org/licenses/CC-BY-4.0.html), [CC BY-SA](https://spdx.org/licenses/CC-BY-SA-4.0.html), and [ODbL](https://spdx.org/licenses/ODbL-1.0.html).
       placeholder: https://spdx.org/licenses/CC0-1.0.html
-    validations:
-      required: true
 
   - type: textarea
     id: license-notes
@@ -74,7 +70,7 @@ body:
   - type: dropdown
     id: stream-type
     attributes:
-      label: Stream type (according to [RDF-STaX](https://w3id.org/stax/dev/taxonomy))
+      label: Stream type (according to RDF-STaX)
       description: Specify the type of the RDF stream in the dataset, using the [RDF Stream Taxonomy (RDF-STaX)](https://w3id.org/stax). Note that it must be possible to interpret the dataset as a grouped RDF stream (i.e., a stream whose elements are RDF graphs or RDF datasets).
       options:
         - RDF graph stream
@@ -121,8 +117,8 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: License
-      description: By submitting this proposal, you agree to publish the metadata of this dataset being published under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. This statement does not apply to the dataset itself, which is licensed as indicated above.
+      label: Metadata license
+      description: By submitting this proposal, you agree to publish the metadata of this dataset under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. This statement does not apply to the dataset itself, which is licensed as indicated above.
       options:
         - label: I agree to the terms
           required: true
