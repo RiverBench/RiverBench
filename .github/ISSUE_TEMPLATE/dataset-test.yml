@@ -1,0 +1,128 @@
+name: Benchmark dataset proposal (new)
+description: Form for proposing new benchmark datasets to be included in RiverBench.
+title: "Dataset proposal: [IDENTIFIER HERE]"
+labels: ["new dataset"]
+assignees:
+  - Ostrzyciel
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you are unsure about something, feel free to leave the field empty – the maintainer will help you.
+        
+        **See the [guide on creating new datasets](https://w3id.org/riverbench/v/dev/documentation/creating-new-dataset) for instructions on how to fill this out.**
+
+        ## General information
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the dataset
+      description: Provide a brief and informative description of the dataset, including its content, structure, and purpose.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dataset-value
+    attributes:
+      label: Value brought by the dataset
+      description: Explain the significance of the dataset and why it should be included in RiverBench. For example, the dataset might cover a new domain, or it may introduce technical features not found in other datasets.
+
+  - type: input
+    id: identifier
+    attributes:
+      label: Proposed identifier
+      description: Suggest a unique identifier for the dataset using only lowercase latin letters, digits, and dashes (-).
+      placeholder: my-dataset
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Link to the source of the dataset
+      description: Provide a link to the dataset's source or repository.
+
+  - type: input
+    id: license
+    attributes:
+      label: License of the dataset
+      description: Specify the dataset's license by providing an SPDX license link from [this list](https://spdx.org/licenses/). Ensure that the chosen license allows for free use and does not prohibit commercial usage or modification. Examples of accepted licenses include [CC Zero](https://spdx.org/licenses/CC0-1.0.html), [CC BY](https://spdx.org/licenses/CC-BY-4.0.html), [CC BY-SA](https://spdx.org/licenses/CC-BY-SA-4.0.html), and [ODbL](https://spdx.org/licenses/ODbL-1.0.html).
+      placeholder: https://spdx.org/licenses/CC0-1.0.html
+    validations:
+      required: true
+
+  - type: textarea
+    id: license-notes
+    attributes:
+      label: Additional licensing notes (if any)
+      description: Mention any licensing irregularities or special clauses related to the dataset, such as a different license for a part of the dataset or restrictions on its use.
+
+  - type: textarea
+    id: creator
+    attributes:
+      label: Creator(s)
+      description: List the names of the dataset's original creators.
+
+## ---------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Technical information
+  
+  - type: dropdown
+    id: stream-type
+    attributes:
+      label: Stream type (according to [RDF-STaX](https://w3id.org/stax/dev/taxonomy))
+      description: Specify the type of the RDF stream in the dataset, using the [RDF Stream Taxonomy (RDF-STaX)](https://w3id.org/stax). Note that it must be possible to interpret the dataset as a grouped RDF stream (i.e., a stream whose elements are RDF graphs or RDF datasets).
+      options:
+        - RDF graph stream
+        - RDF subject graph stream
+        - RDF dataset stream
+        - RDF named graph stream
+        - Timestamped RDF named graph stream
+
+  - type: input
+    id: element-count
+    attributes:
+      label: Stream element count
+      description: Provide the total number of stream elements in the dataset (stream length). This corresponds to the number of files in the dataset's source archive.
+
+  - type: textarea
+    id: element-split
+    attributes:
+      label: How were the stream elements split
+      description: Explain the method used to split the stream into elements, e.g., by time, by topic, other.
+
+  - type: checkboxes
+    id: features
+    attributes:
+      label: Technical features
+      description: Select the technical features that apply to the dataset.
+      options:
+        - label: Uses RDF-star
+        - label: Uses generalized triples
+        - label: Uses generalized datasets
+
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: Additional technical notes (if any)
+      description: Include any additional technical information or notes relevant to the dataset.
+
+## ---------------------------------------------
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Metadata license statement
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: License
+      description: By submitting this proposal, you agree to publish the metadata of this dataset being published under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. This statement does not apply to the dataset itself, which is licensed as indicated above.
+      options:
+        - label: I agree to the terms
+          required: true
