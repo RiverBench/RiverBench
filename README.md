@@ -44,7 +44,7 @@ Below is a snapshot of the latest development version of the suite:
 ## General information
 
 - **<abbr title="Information about rights held in and over the resource.">Rights</abbr>**: The metadata, documentation, and ontologies of RiverBench are licensed under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license. The source code of RiverBench is licensed under the [Apache License, Version 2.0](https://spdx.org/licenses/Apache-2.0). The included datasets are licensed under their respective free licenses, listed in their documentation pages. _(<abbr title="English">en</abbr>)_
-- **<abbr title="This axiom needed so that Protege loads DCAT2 without errors.">Homepage</abbr>**: [RiverBench (dev)](https://w3id.org/riverbench/)
+- **<abbr title="A homepage for some thing.">Homepage</abbr>**: [RiverBench (dev)](https://w3id.org/riverbench/)
 - **<abbr title="The knowledge organization system (KOS) used to classify catalog's datasets.">Theme taxonomy</abbr>**: EuroVoc ([eurovoc:100141](http://eurovoc.europa.eu/100141))
 
 ## Content
