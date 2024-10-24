@@ -22,6 +22,6 @@ jobs:
           body: |
             Hi! Thank you for submitting the proposal. We will review it and get back to you soon.
 
-            @RiverBench/curators – could you please take a look at [this proposal](${{ github.event.issue.url }})?
+            @RiverBench/curators – could you please take a look at [this proposal](https://github.com/RiverBench/RiverBench/issues/${{ github.event.issue.number }})?
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
