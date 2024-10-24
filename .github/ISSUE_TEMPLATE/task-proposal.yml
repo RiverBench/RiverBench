@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        A benchmark task is a description of a concrete benchmarking procedure, for example: measuring deserialization throughput. If you are unsure about something, feel free to leave the field empty – the maintainer will help you.
+        A benchmark task is a description of a concrete benchmarking procedure, for example: measuring deserialization throughput. If you are unsure about something, feel free to leave the field empty – we will help you with that later.
 
         **See the [guide on creating new tasks](https://w3id.org/riverbench/v/dev/documentation/creating-new-task) for instructions on how to fill this out.**
 

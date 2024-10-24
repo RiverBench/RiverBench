@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        If you are unsure about something, feel free to leave the field empty – the maintainer will help you.
+        If you are unsure about something, feel free to leave the field empty – we will help you with that later.
         
         **See the [guide on creating new datasets](https://w3id.org/riverbench/v/dev/documentation/creating-new-dataset) for instructions on how to fill this out.**
 
@@ -122,7 +122,3 @@ body:
       options:
         - label: I agree to the terms
           required: true
-
-  - type: markdown
-    attributes:
-      value: '**Reviewers:** @RiverBench/experts'
