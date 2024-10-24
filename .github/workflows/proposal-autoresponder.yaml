@@ -12,4 +12,17 @@ jobs:
     if: contains(github.event.issue.labels.*.name, 'new dataset') || contains(github.event.issue.labels.*.name, 'new task')
 
     steps:
-      - run: echo ${{ github.event.issue.title }}
+      - uses: octokit/request-action@v2.x
+        id: get_latest_release
+        with:
+          route: POST /repos/{owner}/{repo}/issues/{issue_number}/comments
+          owner: RiverBench
+          repo: RiverBench
+          issue_number: ${{ github.event.issue.number }}
+          body: |
+            Hi! Thank you for the proposal. We will review it and get back to you soon.
+
+            **Reviewers:** @RiverBench/curators
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTIONS_STEP_DEBUG: true
