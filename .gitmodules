@@ -43,3 +43,6 @@
 [submodule "datasets/openaire-lod"]
 	path = datasets/openaire-lod
 	url = ../dataset-openaire-lod
+[submodule "datasets/officegraph"]
+	path = datasets/officegraph
+	url = ../dataset-officegraph
