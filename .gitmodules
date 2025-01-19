@@ -46,3 +46,6 @@
 [submodule "datasets/officegraph"]
 	path = datasets/officegraph
 	url = ../dataset-officegraph
+[submodule "datasets/osm2rdf-denmark"]
+	path = datasets/osm2rdf-denmark
+	url = ../dataset-osm2rdf-denmark
