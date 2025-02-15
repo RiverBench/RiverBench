@@ -59,6 +59,7 @@ Not sure where to start? Check out the **[quick start guide](documentation/using
 - **[Datasets](datasets/index.md)** – packaged and tested datasets, ready to use.
 - **[Benchmark results](results/index.md)** – results reported by the community.
 - **[Code on GitHub](https://github.com/RiverBench)**
+- **[Discord chat](https://discord.gg/HYkutTWsJ9)**
 - **[Citing RiverBench and its datasets](documentation/licensing.md)**
 - **[Paper about RiverBench](https://arxiv.org/abs/2305.06226)** (preprint)
 
